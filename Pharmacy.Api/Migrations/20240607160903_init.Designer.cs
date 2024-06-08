@@ -12,8 +12,8 @@ using Pharmacy.Api.Data;
 namespace Pharmacy.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240607104348_SeedRole")]
-    partial class SeedRole
+    [Migration("20240607160903_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,13 +54,13 @@ namespace Pharmacy.Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1c9516ec-c954-4983-bff4-060924379fac",
+                            Id = "8f3aaed7-e736-40d7-b8f4-2391cca85a6f",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "46c0b399-e10c-47e8-b88b-b384473731ed",
+                            Id = "7d4de5dd-2af6-427d-9bf1-3ac084747564",
                             Name = "Staff",
                             NormalizedName = "STAFF"
                         });
@@ -213,7 +213,6 @@ namespace Pharmacy.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -226,10 +225,6 @@ namespace Pharmacy.Api.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -238,22 +233,14 @@ namespace Pharmacy.Api.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

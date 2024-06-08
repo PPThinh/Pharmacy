@@ -7,3 +7,6 @@ Chức năng của các folder
 - DTOs: Data Transfer Objects - dữ liệu từ entity, giảm thiểu trình bày dữ liệu
 - Mappers: thực hiện ánh xạ từ model sang object
 - Data: AppDbContext -> EF generate class -> table SQL bằng Code First
+
+- Repository: Dành cho database call
+- Service: Dành cho nhiều thứ hơn

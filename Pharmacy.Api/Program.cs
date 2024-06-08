@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Pharmacy.Api.Data;
 using Pharmacy.Api.Interfaces;
 using Pharmacy.Api.Models;
 using Pharmacy.Api.Repositories;
+using Pharmacy.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +29,39 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerGen(option =>
+{
+    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
+    option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter a valid token",
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        BearerFormat = "JWT",
+        Scheme = "Bearer"
+    });
+    option.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type=ReferenceType.SecurityScheme,
+                    Id="Bearer"
+                }
+            },
+            new string[]{}
+        }
+    });
+});
+
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+{
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+});
 
 // Connect db
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -68,6 +103,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
 
@@ -80,7 +116,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors(MyAllowSpecificOrigins);
 
-app.UseAuthorization();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

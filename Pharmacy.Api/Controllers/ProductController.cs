@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pharmacy.Api.Data;
 using Pharmacy.Api.Dtos.Product;
@@ -21,6 +22,7 @@ namespace Pharmacy.Api.Controllers
         
         // Read - doc du lieu
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll()
         {
             // hien thi tat ca product = json

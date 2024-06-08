@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Pharmacy.Api.Dtos.Account;
+using Pharmacy.Api.Interfaces;
 using Pharmacy.Api.Models;
+using System.Diagnostics;
 
 namespace Pharmacy.Api.Controllers
 {
@@ -9,9 +12,43 @@ namespace Pharmacy.Api.Controllers
     public class AccountController : ControllerBase
     {
         private readonly UserManager<User> _userManager;
-        public AccountController(UserManager<User> userManager)
+        private readonly ITokenService _tokenService;
+        private readonly SignInManager<User> _signInManager;
+        public AccountController(UserManager<User> userManager, ITokenService tokenService, SignInManager<User> signInManager)
         {
             _userManager = userManager;
+            _tokenService = tokenService;
+            _signInManager = signInManager;
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
+        {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var user = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == loginDto.UserName);
+            if (user == null)
+            {
+                return Unauthorized("Invalid username!");
+            }
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
+            if (!result.Succeeded)
+            {
+                return Unauthorized("User name not found or password incorrect");
+            }
+
+            return Ok(
+                new NewUserDto
+                {
+                    UserName = user.UserName,
+                    Email = user.Email,
+                    Token = _tokenService.CreateToken(user)
+                }
+                );
         }
 
         [HttpPost("register")]
@@ -19,36 +56,50 @@ namespace Pharmacy.Api.Controllers
         {
             try
             {
-                // da co thong tin nay
-                if(!ModelState.IsValid)
-                {
+                if (!ModelState.IsValid)
                     return BadRequest(ModelState);
-                }
 
-                var user = new User
+                var appUser = new User
                 {
                     UserName = registerDto.UserName,
-                    Email = registerDto.Email,
-                    Password = registerDto.Password,
+                    Email = registerDto.Email
                 };
 
-                var createUser = await _userManager.CreateAsync(user, registerDto.Password);
+                var createdUser = await _userManager.CreateAsync(appUser, registerDto.Password);
 
-                if(createUser.Succeeded)
+                if (createdUser.Succeeded)
                 {
-                    var role = await _userManager.AddToRoleAsync(user, "Staff");
-                    return role.Succeeded?  Ok("User created") : StatusCode(500, role.Errors);
-
+                    var roleResult = await _userManager.AddToRoleAsync(appUser, "Staff");
+                    if (roleResult.Succeeded)
+                    {
+                        return Ok(
+                            new NewUserDto
+                            {
+                                UserName = appUser.UserName,
+                                Email = appUser.Email,
+                                Token = _tokenService.CreateToken(appUser)
+                            }
+                        );
+                    }
+                    else
+                    {
+                        Debug.WriteLine("role error");
+                        return StatusCode(500, roleResult.Errors);
+                    }
                 }
                 else
                 {
-                    return StatusCode(500, createUser.Errors);
+                    Debug.WriteLine("user create error");
+
+                    return StatusCode(500, createdUser.Errors);
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                return StatusCode(500, ex);
-            };
+                Debug.WriteLine("exception something");
+                return StatusCode(500, e);
+            }
         }
     }
+    
 }

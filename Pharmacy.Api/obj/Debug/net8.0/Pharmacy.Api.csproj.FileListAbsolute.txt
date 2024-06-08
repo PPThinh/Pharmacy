@@ -141,3 +141,8 @@ D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Identi
 D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\ASPProject\Pharmacy\Pharmacy.Api\obj\Debug\net8.0\Pharmacy.Api.sourcelink.json
+D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\ASPProject\Pharmacy\Pharmacy.Api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

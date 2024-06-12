@@ -21,21 +21,17 @@ export default {
 
 <template>
   <div id="app">
-    <PostComponent />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import PostComponent from './components/PostComponent.vue';
-
 export default {
-  name: 'App',
-  components: {
-    PostComponent
-  }
+  name: 'App'
 };
 </script>
 
 <style>
-/* Global styles can go here */
+/* Thêm CSS tùy chọn tại đây */
 </style>
+

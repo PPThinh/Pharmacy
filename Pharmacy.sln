@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Api", "Pharmacy.Api\Pharmacy.Api.csproj", "{0921ECF7-CA38-4F14-B239-B0A99D049588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Backend\src\Api\Api.csproj", "{0921ECF7-CA38-4F14-B239-B0A99D049588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

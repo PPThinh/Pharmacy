@@ -3,88 +3,28 @@
   "WorkspaceRootPath": "D:\\ASPProject\\Pharmacy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|d:\\aspproject\\pharmacy\\pharmacy.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|D:\\ASPProject\\Pharmacy\\backend\\src\\api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|solutionrelative:backend\\src\\api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|d:\\aspproject\\pharmacy\\backend\\src\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|solutionrelative:backend\\src\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|D:\\ASPProject\\Pharmacy\\backend\\src\\api\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|solutionrelative:backend\\src\\api\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|d:\\aspproject\\pharmacy\\backend\\src\\api\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|solutionrelative:backend\\src\\api\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|d:\\aspproject\\pharmacy\\backend\\src\\api\\helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|solutionrelative:backend\\src\\api\\helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\pharmacy.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\pharmacy.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\doccument.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\doccument.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\mappers\\productmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\mappers\\productmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\dtos\\product\\updateproductrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\dtos\\product\\updateproductrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|D:\\ASPProject\\Pharmacy\\pharmacy.api\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Pharmacy.Api\\Pharmacy.Api.csproj|solutionrelative:pharmacy.api\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|D:\\ASPProject\\Pharmacy\\backend\\src\\api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0921ECF7-CA38-4F14-B239-B0A99D049588}|Backend\\src\\Api\\Api.csproj|solutionrelative:backend\\src\\api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,260 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Account\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Dtos\\Account\\LoginDto.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Account\\LoginDto.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Dtos\\Account\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Backend\\src\\Api\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "Backend\\src\\Api\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:43:41.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NewUserDto.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Account\\NewUserDto.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Dtos\\Account\\NewUserDto.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Account\\NewUserDto.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Dtos\\Account\\NewUserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T11:58:57.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Program.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Program.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAgwDYAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T16:17:09.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Doccument.txt",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Doccument.txt",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Doccument.txt",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Doccument.txt",
-              "RelativeToolTip": "Pharmacy.Api\\Doccument.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-07T11:27:28.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T06:43:52.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Interfaces\\ITokenService.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Interfaces\\ITokenService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T11:37:55.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Pharmacy.Api",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Pharmacy.Api.csproj",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Pharmacy.Api.csproj",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Pharmacy.Api.csproj",
-              "RelativeToolTip": "Pharmacy.Api\\Pharmacy.Api.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-07T12:50:32.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAgAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:02:57.709Z",
+              "WhenOpened": "2024-06-12T05:14:58.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\appsettings.json",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\appsettings.json",
-              "RelativeToolTip": "Pharmacy.Api\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-07T09:42:02.371Z"
+              "Title": "QueryObject.cs",
+              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Helpers\\QueryObject.cs",
+              "RelativeDocumentMoniker": "Backend\\src\\Api\\Helpers\\QueryObject.cs",
+              "ToolTip": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Helpers\\QueryObject.cs",
+              "RelativeToolTip": "Backend\\src\\Api\\Helpers\\QueryObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T05:13:31.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Backend\\src\\Api\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Backend\\src\\Api\\Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwB0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:18:05Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwDAAAAA7AAAA",
+              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Backend\\src\\Api\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Backend\\src\\Api\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T09:56:39.254Z"
+              "WhenOpened": "2024-06-10T05:15:41.027Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Services\\TokenService.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Services\\TokenService.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Services\\TokenService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAawCcAAAA9AAAA",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Backend\\src\\Api\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Backend\\src\\Api\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwB0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T11:38:52.331Z"
+              "WhenOpened": "2024-06-10T04:25:19.024Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Account\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Dtos\\Account\\RegisterDto.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Account\\RegisterDto.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Dtos\\Account\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Backend\\src\\Api\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\ASPProject\\Pharmacy\\Backend\\src\\Api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Backend\\src\\Api\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T10:11:14.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Models\\User.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\User.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T06:40:44.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Models\\Product.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\Product.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Models\\Product.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T06:50:37.662Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UpdateProductRequestDto.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Product\\UpdateProductRequestDto.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Dtos\\Product\\UpdateProductRequestDto.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Product\\UpdateProductRequestDto.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Dtos\\Product\\UpdateProductRequestDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:57:46.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Repositories\\ProductRepository.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T16:10:51.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Models\\Customer.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\Customer.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T06:35:01.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Product\\ProductDto.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Dtos\\Product\\ProductDto.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Dtos\\Product\\ProductDto.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Dtos\\Product\\ProductDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T06:53:55.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductMappers.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Mappers\\ProductMappers.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Mappers\\ProductMappers.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Mappers\\ProductMappers.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Mappers\\ProductMappers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T06:55:02.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\Gender.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Models\\Gender.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Models\\Gender.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Models\\Gender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:40:03.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Interfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Api\\Interfaces\\IProductRepository.cs",
-              "ToolTip": "D:\\ASPProject\\Pharmacy\\Pharmacy.Api\\Interfaces\\IProductRepository.cs",
-              "RelativeToolTip": "Pharmacy.Api\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T09:19:54.757Z"
+              "WhenOpened": "2024-06-09T19:41:50.484Z"
             }
           ]
         }

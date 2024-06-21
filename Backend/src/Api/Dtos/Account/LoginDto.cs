@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Api.Dtos.Account
+namespace Api.Dtos.Account
 {
     public class LoginDto
     {

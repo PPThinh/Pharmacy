@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Pharmacy.Api.Data;
-using Pharmacy.Api.Dtos.Product;
-using Pharmacy.Api.Interfaces;
-using Pharmacy.Api.Mappers;
+using Api.Data;
+using Api.Dtos.Product;
+using Api.Interfaces;
+using Api.Mappers;
 
-namespace Pharmacy.Api.Controllers
+namespace Api.Controllers
 {
     [Route("api/product")]
     [ApiController]

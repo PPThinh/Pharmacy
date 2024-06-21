@@ -1,6 +1,6 @@
-﻿using Pharmacy.Api.Models;
+﻿using Api.Models;
 
-namespace Pharmacy.Api.Interfaces
+namespace Api.Interfaces
 {
     public interface ITokenService
     {

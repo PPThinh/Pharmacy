@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Pharmacy.Api.Dtos.Account;
-using Pharmacy.Api.Interfaces;
-using Pharmacy.Api.Models;
+using Api.Dtos.Account;
+using Api.Interfaces;
+using Api.Models;
 using System.Diagnostics;
 
-namespace Pharmacy.Api.Controllers
+namespace Api.Controllers
 {
     [Route("api/account")]
     public class AccountController : ControllerBase
@@ -69,7 +69,7 @@ namespace Pharmacy.Api.Controllers
 
                 if (createdUser.Succeeded)
                 {
-                    var roleResult = await _userManager.AddToRoleAsync(appUser, "Staff");
+                    var roleResult = await _userManager.AddToRoleAsync(appUser, "Admin");
                     if (roleResult.Succeeded)
                     {
                         return Ok(

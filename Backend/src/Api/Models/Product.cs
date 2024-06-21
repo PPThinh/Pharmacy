@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Api.Models
+namespace Api.Models
 {
     public class Product
     {
@@ -14,5 +14,7 @@ namespace Pharmacy.Api.Models
         public int Price { get; set; }
         //public string Image { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
+        public string ImagePath { get; set; } = string.Empty;
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }

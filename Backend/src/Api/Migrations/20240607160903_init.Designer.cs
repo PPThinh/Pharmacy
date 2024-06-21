@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Pharmacy.Api.Data;
+using Api.Data;
 
 #nullable disable
 
-namespace Pharmacy.Api.Migrations
+namespace Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20240607160903_init")]
@@ -172,7 +172,7 @@ namespace Pharmacy.Api.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Pharmacy.Api.Models.Product", b =>
+            modelBuilder.Entity("Api.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -200,7 +200,7 @@ namespace Pharmacy.Api.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Pharmacy.Api.Models.User", b =>
+            modelBuilder.Entity("Api.Models.User", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -276,7 +276,7 @@ namespace Pharmacy.Api.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Pharmacy.Api.Models.User", null)
+                    b.HasOne("Api.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -285,7 +285,7 @@ namespace Pharmacy.Api.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Pharmacy.Api.Models.User", null)
+                    b.HasOne("Api.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -300,7 +300,7 @@ namespace Pharmacy.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Pharmacy.Api.Models.User", null)
+                    b.HasOne("Api.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -309,7 +309,7 @@ namespace Pharmacy.Api.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Pharmacy.Api.Models.User", null)
+                    b.HasOne("Api.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

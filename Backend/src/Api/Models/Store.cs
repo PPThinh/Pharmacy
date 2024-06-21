@@ -1,13 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Pharmacy.Api.Models
+﻿namespace Api.Models
 {
     public class Store
     {
-        [Required]
-        public string ID { get; set; }
+        public int StoreId { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
         public string PhoneNumber { get; set; }
+        // fk
+        public int AddressId { get; set; }
+        public Address Address { get; set; }
+        public List<Order> Orders { get; set; }
     }
 }

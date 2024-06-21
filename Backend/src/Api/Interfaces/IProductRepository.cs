@@ -1,8 +1,8 @@
 ﻿using Api.Helpers;
-using Pharmacy.Api.Dtos.Product;
-using Pharmacy.Api.Models;
+using Api.Dtos.Product;
+using Api.Models;
 
-namespace Pharmacy.Api.Interfaces
+namespace Api.Interfaces
 {
     public interface IProductRepository
     {

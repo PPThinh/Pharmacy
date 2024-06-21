@@ -1,6 +1,6 @@
-﻿using Pharmacy.Api.Dtos.Product;
-using Pharmacy.Api.Models;
-namespace Pharmacy.Api.Mappers
+﻿using Api.Dtos.Product;
+using Api.Models;
+namespace Api.Mappers
 {
     public static class ProductMappers
     {
@@ -23,6 +23,7 @@ namespace Pharmacy.Api.Mappers
                 Name = productDto.Name,
                 CompanyName = productDto.CompanyName,
                 Price = productDto.Price,
+                //ImagePath = productDto.ImagePath,
                 Description = productDto.Description
             };
         }

@@ -1,13 +1,13 @@
 ﻿using Api.Helpers;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
-using Pharmacy.Api.Data;
-using Pharmacy.Api.Dtos.Product;
-using Pharmacy.Api.Interfaces;
-using Pharmacy.Api.Models;
+using Api.Data;
+using Api.Dtos.Product;
+using Api.Interfaces;
+using Api.Models;
 using System.Linq;
 
-namespace Pharmacy.Api.Repositories
+namespace Api.Repositories
 {
     public class ProductRepository : IProductRepository
     {
@@ -27,7 +27,9 @@ namespace Pharmacy.Api.Repositories
                 products = products.Where(s => s.CompanyName.Contains(query.CompanyName));
             }
 
-            return await products.ToListAsync();
+            var SkipNumber = (query.PageNumber - 1) * query.PageSize;
+
+            return await products.Skip(SkipNumber).Take(query.PageSize).ToListAsync();
         }
 
         public async Task<Product?> GetByIdAsync(int id)
@@ -52,6 +54,7 @@ namespace Pharmacy.Api.Repositories
             existingProduct.Name = productDto.Name;
             existingProduct.CompanyName = productDto.CompanyName;
             existingProduct.Price = productDto.Price;
+            //existingProduct.ImagePath = productDto.ImagePath;
             existingProduct.Description = productDto.Description;
 
             await _context.SaveChangesAsync();

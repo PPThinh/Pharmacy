@@ -1,11 +1,11 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using Pharmacy.Api.Interfaces;
-using Pharmacy.Api.Models;
+using Api.Interfaces;
+using Api.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Pharmacy.Api.Services
+namespace Api.Services
 {
     public class TokenService : ITokenService
     {

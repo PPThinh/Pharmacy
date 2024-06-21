@@ -1,4 +1,4 @@
-﻿namespace Pharmacy.Api.Dtos.Employee
+﻿namespace Api.Dtos.Employee
 {
     public enum RoleDto
     {

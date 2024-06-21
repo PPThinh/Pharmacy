@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Pharmacy.Api.Data;
-using Pharmacy.Api.Interfaces;
-using Pharmacy.Api.Models;
-using Pharmacy.Api.Repositories;
-using Pharmacy.Api.Services;
+using Api.Data;
+using Api.Interfaces;
+using Api.Models;
+using Api.Repositories;
+using Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,13 +19,20 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:3000","http://localhost:8080");
+                          policy.WithOrigins("http://localhost:3000","http://localhost:8080", "http://localhost:5173");
                           policy.AllowAnyHeader().AllowAnyMethod();
 
                       });
 });
 
 builder.Services.AddControllers();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireAdministratorRole",
+         policy => policy.RequireRole("Admin"));
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -103,6 +110,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();

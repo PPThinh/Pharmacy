@@ -19,7 +19,7 @@
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
-          "Pharmacy.Api.dll": {}
+          "Api.dll": {}
         }
       },
       "Azure.Core/1.35.0": {

@@ -1,4 +1,4 @@
-﻿namespace Pharmacy.Api.Models
+﻿namespace Api.Models
 {
     public enum Gender
     {

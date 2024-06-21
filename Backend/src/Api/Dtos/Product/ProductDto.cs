@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Api.Dtos.Product
+namespace Api.Dtos.Product
 {
     public class ProductDto
     {

@@ -22,13 +22,13 @@ namespace Api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Api.Models.Address", b =>
+            modelBuilder.Entity("Api.Models.Customer", b =>
                 {
-                    b.Property<int>("AddressId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AddressId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -38,9 +38,14 @@ namespace Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("HouseNumber")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
                     b.Property<string>("Street")
                         .IsRequired()
@@ -50,36 +55,9 @@ namespace Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("AddressId");
-
-                    b.ToTable("Addresses", (string)null);
-                });
-
-            modelBuilder.Entity("Api.Models.Customer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AddressId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("AddressId")
-                        .IsUnique();
-
-                    b.ToTable("Customers", (string)null);
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("Api.Models.Employee", b =>
@@ -90,10 +68,19 @@ namespace Api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AddressId")
-                        .HasColumnType("int");
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("District")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Street")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -101,15 +88,16 @@ namespace Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("Id");
+                    b.Property<string>("Ward")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("AddressId")
-                        .IsUnique();
+                    b.HasKey("Id");
 
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("Employees", (string)null);
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("Api.Models.Order", b =>
@@ -122,6 +110,10 @@ namespace Api.Migrations
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
+
+                    b.Property<string>("CustomerPhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
@@ -140,7 +132,7 @@ namespace Api.Migrations
 
                     b.HasIndex("StoreId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Api.Models.OrderDetail", b =>
@@ -158,7 +150,7 @@ namespace Api.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderDetails", (string)null);
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("Api.Models.Product", b =>
@@ -190,7 +182,27 @@ namespace Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 9,
+                            CompanyName = "DHC",
+                            Description = "Hỗ trợ bổ sung calci, hỗ trợ hệ xương răng chắc khỏe, hỗ trợ phát triển chiều cao cho trẻ. Hỗ trợ làm giảm nguy cơ loãng xương ở người cao tuổi, còi xương ở trẻ em.",
+                            ImagePath = "./Pics/dhc-1.jpg",
+                            Name = "Viên uống DHC Calcium + CBP 120 viên",
+                            Price = 210000
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CompanyName = "DHC",
+                            Description = "\r\nDHC Multi Vitamins bổ sung các vitamin cho cơ thể, giúp hỗ trợ bồi bổ sức khỏe.",
+                            ImagePath = "./Pics/dhc-1.jpg",
+                            Name = "Viên uống DHC Multi-Vitamin",
+                            Price = 100000
+                        });
                 });
 
             modelBuilder.Entity("Api.Models.Store", b =>
@@ -201,8 +213,13 @@ namespace Api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StoreId"));
 
-                    b.Property<int>("AddressId")
-                        .HasColumnType("int");
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("District")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -212,12 +229,17 @@ namespace Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ward")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("StoreId");
 
-                    b.HasIndex("AddressId")
-                        .IsUnique();
-
-                    b.ToTable("Stores", (string)null);
+                    b.ToTable("Stores");
                 });
 
             modelBuilder.Entity("Api.Models.User", b =>
@@ -314,13 +336,13 @@ namespace Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "566bf73e-24c8-4c82-896b-8bf9a229d816",
+                            Id = "bb2eff7c-5884-4d4d-9195-a7cabcaac530",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "629976a7-010c-4397-9eb0-4a5ef7ed6156",
+                            Id = "242bcf38-055f-4e3e-b946-39ea696e2af4",
                             Name = "Staff",
                             NormalizedName = "STAFF"
                         });
@@ -432,32 +454,13 @@ namespace Api.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Api.Models.Customer", b =>
-                {
-                    b.HasOne("Api.Models.Address", "Address")
-                        .WithOne("Customer")
-                        .HasForeignKey("Api.Models.Customer", "AddressId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Address");
-                });
-
             modelBuilder.Entity("Api.Models.Employee", b =>
                 {
-                    b.HasOne("Api.Models.Address", "Address")
-                        .WithOne("Employee")
-                        .HasForeignKey("Api.Models.Employee", "AddressId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Api.Models.User", "User")
                         .WithOne("Employee")
                         .HasForeignKey("Api.Models.Employee", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Address");
 
                     b.Navigation("User");
                 });
@@ -508,17 +511,6 @@ namespace Api.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Api.Models.Store", b =>
-                {
-                    b.HasOne("Api.Models.Address", "Address")
-                        .WithOne("Store")
-                        .HasForeignKey("Api.Models.Store", "AddressId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Address");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -567,18 +559,6 @@ namespace Api.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Api.Models.Address", b =>
-                {
-                    b.Navigation("Customer")
-                        .IsRequired();
-
-                    b.Navigation("Employee")
-                        .IsRequired();
-
-                    b.Navigation("Store")
                         .IsRequired();
                 });
 

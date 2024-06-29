@@ -19,7 +19,7 @@ namespace Api.Repositories
         }
 
 
-        public async Task<List<Product>> GetAllAsync(QueryObject query)
+        public async Task<List<Product>> GetAllAsync(ProductQueryObject query)
         {
             var products = _context.Products.AsQueryable();
             if (!string.IsNullOrWhiteSpace(query.CompanyName))

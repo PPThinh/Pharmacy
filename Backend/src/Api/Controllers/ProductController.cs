@@ -11,6 +11,7 @@ namespace Api.Controllers
 {
     [Route("api/product")]
     [ApiController]
+    [Authorize]
     public class ProductController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -24,7 +25,7 @@ namespace Api.Controllers
         // Read - doc du lieu
         [HttpGet]
         //[Authorize]
-        public async Task<IActionResult> GetAll([FromQuery] QueryObject query)
+        public async Task<IActionResult> GetAll([FromQuery] ProductQueryObject query)
         {
             // hien thi tat ca product = json
             var products = await _repo.GetAllAsync(query);
@@ -45,7 +46,6 @@ namespace Api.Controllers
 
         // Create - Tao du lieu
         [HttpPost]
-        [Authorize]
         public async Task<IActionResult> Create([FromBody] CreateProductRequestDto productDto)
         {
             var productModel = productDto.ToProductFromCreateDto();

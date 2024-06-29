@@ -19,7 +19,6 @@ namespace Api.Data
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Address> Addresses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -51,23 +50,6 @@ namespace Api.Data
                 .HasForeignKey(o => o.StoreId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Configure one-to-one relationship for Customer
-            builder.Entity<Customer>()
-                .HasOne(c => c.Address)
-                .WithOne(a => a.Customer)
-                .HasForeignKey<Customer>(c => c.AddressId);
-
-            // Configure one-to-one relationship for Employee
-            builder.Entity<Employee>()
-                .HasOne(e => e.Address)
-                .WithOne(a => a.Employee)
-                .HasForeignKey<Employee>(e => e.AddressId);
-
-            // Configure one-to-one relationship for Store
-            builder.Entity<Store>()
-                .HasOne(s => s.Address)
-                .WithOne(a => a.Store)
-                .HasForeignKey<Store>(s => s.AddressId);
 
             // Role seeder của employee
             List<IdentityRole> roles = new List<IdentityRole>

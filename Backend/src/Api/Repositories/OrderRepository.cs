@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 namespace Api.Repositories
 {
-    public class OrderRepository : IOrderRepository
+    public class OrderRepository : IRepository<Order>
     {
         private readonly AppDbContext _context;
         public OrderRepository(AppDbContext context)
@@ -23,7 +23,7 @@ namespace Api.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Order>> GetAllAsync(QueryObject query)
+        public async Task<IEnumerable<Order>> GetAllAsync(ProductQueryObject query)
         {
             var orders = _context.Orders.AsQueryable();
             if (!string.IsNullOrWhiteSpace(query.StoreId))
@@ -43,11 +43,16 @@ namespace Api.Repositories
             return await orders.Skip(SkipNumber).Take(query.PageSize).ToListAsync();
         }
 
-        public async Task<IEnumerable<Order>?> GetByCustomerNameAsync(string customerName)
+        public Task<IEnumerable<Order>> GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<Order>?> GetByCustomerPhoneNumberAsync(string phoneNumber)
         {
             return await _context.Orders
                 .Include(o => o.Customer)
-                .Where(o => o.Customer.Name == customerName)
+                .Where(o => o.Customer.PhoneNumber == phoneNumber)
                 .ToListAsync();
         }
 
@@ -62,6 +67,11 @@ namespace Api.Repositories
                 .Include(o => o.Employee)
                 .Where(o => o.Customer.Name == employeeName)
                 .ToListAsync();
+        }
+
+        public Task<Order> UpdateAsync(int id, Order model)
+        {
+            throw new NotImplementedException();
         }
     }
 }
